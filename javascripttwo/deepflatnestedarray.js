@@ -1,6 +1,6 @@
 // Deep flatten nested arrays inside object
 // Input:{ a: [1, [2, [3]]], b: [4, [5]] }
-// Output :{ a: [1,2,3], b: [4,5] }
+// Output :{ a: [1,2,3], b: [4,5] } {not able to do this difficult}
 
 function flatten(arr){
     let result = []
@@ -27,5 +27,7 @@ function deepFlatNestedArray(values){
 }
 
 let data = { a: [1, [2, [3]]], b: [4, [5]] }
-
 console.log(deepFlatNestedArray(data))
+
+// let arr=[1, [2, [3, 4], 5], 6]
+// console.log(flatten(arr))
