@@ -22,3 +22,18 @@ fs.readFile('clean.txt','utf-8',(err,data)=>{
         console.log('Filed Cleaned Sucessfully')
     })
 })
+
+
+function wait(n) {
+    let p = new Promise((resolve) => {
+      setTimeout(() => {
+        resolve();
+      }, n * 1000);
+    });
+    return p;
+  }
+
+ 
+wait(2).then(()=>{
+    console.log("Done after 2 seconds")
+})
