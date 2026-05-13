@@ -14,7 +14,7 @@ const updateCounter = () => {
   console.log(counter);
 
   
-setInterval(updateCounter, 1000);
+setInterval(updateCounter, 100);
 };
 
 updateCounter()
