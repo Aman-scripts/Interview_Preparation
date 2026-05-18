@@ -33,27 +33,25 @@
 //     return p;
 //   }
 
- 
+
 // wait(2).then(()=>{
 //     console.log("Done after 2 seconds")
 // })
 
 
-function sleep(milliseconds){
-  return new Promise((resolve)=>{
-const start=Date.now();
+function sleep(milliseconds) {
+  return new Promise((resolve) => {
+    const start = Date.now();
 
-//Busy wait loop
-while(Date.now()-start<milliseconds){
-  //Do nothing
-}
+    //Busy wait loop
+    while (Date.now() - start < milliseconds) {
+      //Do nothing
+    }
 
-resolve();
+    resolve();
   })
 }
-
 console.log("A");
-
 sleep(6000).then(() => {
   console.log("B");
 });
